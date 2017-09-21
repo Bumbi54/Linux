@@ -1,0 +1,12 @@
+Screen command:
+  https://www.rackaid.com/blog/linux-screen-tutorial-and-how-to/
+  https://unix.stackexchange.com/questions/7453/how-to-split-the-terminal-into-more-than-one-view
+
+Top command:
+    https://www.lifewire.com/linux-top-command-2201163
+    https://linux.die.net/man/1/top
+
+Find:
+  http://www.ducea.com/2008/02/12/linux-tips-find-all-files-of-a-particular-size/
+
+Keep these two keys in mind: [Ctrl-c], the interrupt key, used to interrupt a running program, and [Ctrl-d], the eof key, used to signify the end of terminal input to a program that’s expecting input from the terminal.

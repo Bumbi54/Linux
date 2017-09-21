@@ -1,0 +1,61 @@
+Be careful of letter case of commands you type. DATE != date
+SILENT COMMANDS:
+  -silent commands don't return output in command prompt if they are successful
+  -returns something is they failed
+
+UNIX consider both directories and ordinary files as a file, so some commands work for both.
+
+Commands can be used arguments that begin with hyphen for different results/behavior. Such argument is called "opinion".
+
+User can write file with commands that he want to run and then run all commands in that file with "sh".
+
+Division:
+  -kernel
+    Interacts with machine's hardware
+    Bootstrap program loads it into a memory
+    Written in C
+    User programs that need to communitate with hardware do it over set of function called system calls
+    It manages memory, processes and other.
+  -shell
+    Interacts with user
+    Interface between user and kernel.
+    One for each user who is currently logged in
+
+  The kernel is represented by the file /boot/vmlinuz. The shells are in /bin and /usr/bin.
+
+  Files have places and processes have life.
+    Directories and devices are considered files.
+
+Commands are usually represented as disk files that contains executable programs:
+  -internal: this commands are not disks files, for example "cd"
+  -external: this commands are disk files
+
+General commands are located in:
+  /bin
+  /user/bin
+Commands for graphical output are located in:
+  /usr/X11R6/bin
+  /usr/dt/bin
+Commands used by system administrator re located in:
+  /sbin
+  /usr/sbin
+
+Commands:
+  Arguments that start with hyphen (-) are called "options".
+  Filenames are generally last arguments in command line (not always).
+
+To write multiple commands in single line use delimiter ";".
+
+Man command output:
+  -If a command argument is enclosed in rectangular brackets, then it is optional;
+    otherwise, the argument is required. The wc man page shows all its arguments
+    enclosed in three such groups. This means that wc can be used without arguments.
+  -The ellipsis (a set of three dots) implies that there can be more instances of the
+    preceding word. The expression [ file ... ] signifies that wc can be used with
+    more than one filename as argument.
+  -If you find a | (pipe) character in any of these areas, it means that only one of the
+    options shown on either side of the pipe can be used. Here, only one of the options,
+    -c, -m and -C, can be used.
+
+Password of users are stored in:
+  /etc/shadow

@@ -1,0 +1,28 @@
+TA B L E 2 . 2 Escape Sequences Used by echo and printf
+Escape Sequence   Significance
+\a                  Bell
+\c                  No newline (cursor in same line)
+\f                  Formfeed
+\n                  Newline
+\r                  Carriage return
+\t                  Tab
+\\                  Backslash
+\0n                 ASCII character represented by the octal value n, where n can’t exceed 377 (decimal value 255)
+
+
+TA B L E 2 . 4 stty Settings and Keyboard Commands to Try When Things Go Wrong
+stty        Keyword Typical Setting Function
+erase       [Ctrl-h] Erases text
+interrupt   [Ctrl-c] or [Delete] Interrupts a command
+eof         [Ctrl-d] Terminates input to a program that expects
+                      input from the keyboard
+stop        [Ctrl-s] Stops scrolling of display and locks keyboard
+start       [Ctrl-q] Resumes scrolling of display and unlocks keyboard
+kill        [Ctrl-u] Kills command line without executing it
+quit        [Ctrl-\] Kills running command but creates a core fi le
+                      containing the memory image of the program
+susp        [Ctrl-z] Suspends process and returns shell prompt;
+                      use fg to resume job
+echo         -       Enables display to echo keyboard input
+                      (-echo to disable)
+sane         -       Restores terminal to normal status

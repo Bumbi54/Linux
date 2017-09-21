@@ -1,0 +1,10 @@
+Shell that user is using:
+  $SHELL
+
+Environmental variable:
+  $PATH
+    List of directories.
+    When user enters commands shell looks in this directories for file with that name.
+
+To change "man" viewer:
+  PAGER=less ; export PAGER

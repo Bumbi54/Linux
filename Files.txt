@@ -1,0 +1,30 @@
+Prints a file:
+  cat
+    cat FILE_NAME
+Copy file:
+  cp
+    cp FILE_NAME NEW_FILE_NAME
+  Copy of the file is created.
+  Can be used for both files and directories.
+
+List filenames:
+  ls
+    List files horizontally.
+
+Rename file:
+  mv
+    mv FILE FILE
+  -file is moved
+Delete file:
+  rm
+    rm FILE
+  -silent command
+
+Creating directory:
+  mkidr NAME_DIR
+
+Print out current directory pathname:
+  pwd
+
+Change current directory:
+  cd NAME/

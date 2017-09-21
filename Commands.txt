@@ -1,0 +1,89 @@
+Print current date and time:
+  date
+  -only a privileged user can change date and time
+Change date:
+  date -s "2 AUG 2017 10:25:30"
+  date --set="2 AUG 2017 10:25:30"
+To se running processes:
+  ps
+Create file and in it write date. This is redirecting output:
+  echo date > foo
+
+Print out files and directories:
+  ls
+    Parameter "-F" can be used to mark directories with "/":
+      ls -F
+
+Remove directory:
+  rmdir NAME
+
+To run a script:
+  sh NAME
+    It represents shell.
+    It interprets any argument as a file to take its input from.
+
+To check users on system:
+  who
+
+To located where command is stored use one of:
+  which, whereis, type
+For counting in files use command "wc":
+  Print newline, word, and byte counts for each FILE, and a total line if more than one FILE is specified.
+
+Editors:
+  "less" editor/viewer (used by "man" commands):
+    To quit: "q"
+    Next page: "f or spacebar"
+    Previous page: "b"
+    To search: "/NAME"
+    Next in search: "n"
+
+Command "man" is used for help and information about other commands:
+  If user wants to search man pages for specific word he can use argument "-k":
+      man -k "NAME"
+  For printing just the header:
+    man -f "NAME"
+
+Alternative to man:
+  "info"
+    n Visits the next node
+    p Visits the previous node
+    u Returns to the previous level where [Enter] was pressed
+    l Moves to the previously visited node
+    h For help
+
+Command "echo" is used to send string of data into files or shell.
+  echo "My text"
+  It can also be used with escape character with parameter "-e".
+    echo -e "My text \t and tab"
+  Can also octal numbers (\0) for shortcuts:
+    echo "\07"
+      For ctrl+g -> beep
+  To output string without trailing new line use parameter "-n".
+
+As alternative to "echo" command "printf" can be used. It is recommended to use "printf" instead "echo".
+  "printf" doesn't print trailing new line, so user needs to add "\n" ad the end of the string if he wants new line in output.
+  This command is similar to it C counterpart.
+    For using variables in output syntax is:
+      printf "My string and variable %s \n" $SHELL
+
+Command "script" saves all commands and output to file:
+  1. run command "script"
+  2. Everything is recorded
+  3. To stop type exit
+
+Sending mail:
+  mailx -s “New System” charlie < message.txt
+    -s is for "Subject"
+
+Changing password:
+  passwd
+    Root can change other users password.
+
+General information of OS:
+  uname
+    "-r" current release
+    "-n" machine hostname
+
+Setting of terminal, like shortcuts and similar:
+  stty

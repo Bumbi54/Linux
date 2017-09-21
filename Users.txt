@@ -1,0 +1,9 @@
+Root prompt string is always #.
+User prompt string can differ. For example: $, %
+Logout with command:
+  logout
+  exit - can also be used
+Check who is using system:
+  who
+Change sudo password for user if you have access to root:
+  passwd USER_NAME
